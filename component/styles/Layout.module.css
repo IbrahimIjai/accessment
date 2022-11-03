@@ -1,0 +1,7 @@
+.container .Schildren {
+  display: flex;
+}
+.container .Schildren .container {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=Layout.module.css.map */

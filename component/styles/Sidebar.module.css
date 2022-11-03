@@ -1,0 +1,9 @@
+.container {
+  background-color: rgb(35, 4, 126);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}/*# sourceMappingURL=Sidebar.module.css.map */
