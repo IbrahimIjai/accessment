@@ -1,0 +1,78 @@
+.Navbar {
+  display: flex;
+  padding: 1.5rem 3rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+.Navbar .Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.Navbar .Search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 35px;
+  border: 0.1px solid #213F7D;
+  border-radius: 5px 20px 20px 5px;
+}
+.Navbar .Search input {
+  width: 100%;
+  background: none;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  outline: none;
+  position: relative;
+  height: 100%;
+}
+.Navbar .Search .searchIcon {
+  background-color: #39CDCC;
+  width: 15%;
+  margin-right: -2%;
+  z-index: 1;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0px;
+}
+.Navbar .Search .searchIcon .searchIconMain {
+  color: #fff;
+  font-weight: 600;
+  stroke-width: 60px;
+}
+.Navbar .Navigators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #213F7D;
+}
+.Navbar .Navigators .docs {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.Navbar .Navigators .userProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.Navbar .Navigators .userProfile .userProfileLink {
+  font-weight: 600;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.Navbar .Navigators .userProfile .userProfileImage {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}/*# sourceMappingURL=Navbar.module.css.map */

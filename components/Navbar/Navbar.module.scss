@@ -1,0 +1,87 @@
+.Navbar{
+    display: flex;
+    padding: 1.5rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+
+    .Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .Search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 35px;
+        border: .1px solid #213F7D;
+        border-radius: 5px 20px 20px 5px;
+        input{
+            width: 100%;
+            background: none;
+            padding: .5rem .5rem;
+            border: none;
+            outline: none;
+            position: relative;
+            height: 100%;
+        }
+        .searchIcon{
+            background-color: #39CDCC;
+            width: 15%;
+            margin-right: -2%;
+            z-index: 1;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 10px 10px 0px;
+            .searchIconMain{
+                color: #fff;
+                font-weight: 600;
+                stroke-width: 60px;
+            }
+        }
+    }
+    .Navigators{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        color: #213F7D;
+        .docs{
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .userProfile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            .userProfileLink{
+                font-weight: 600;
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+                justify-content: center;
+            }
+            .userProfileImage{
+                border-radius: 50%;
+                overflow: hidden;
+                // flex: 0 0 auto;
+                width: 60px;
+                height: 60px;
+                position: relative;
+                // margin: 2% 10px;
+                // border-radius: 5px;
+                // overflow: hidden;
+                // animation: move 4s ease-in-out 4 alternate;
+                // transition: transform 500ms;
+                // border: 0.4px solid #2fc0db;
+            }
+        }
+    }
+}
