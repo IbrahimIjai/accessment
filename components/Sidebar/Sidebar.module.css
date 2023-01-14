@@ -1,18 +1,27 @@
-.SideBarContainer {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+.container .SideBarContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   color: #213F7D;
   font-weight: 400;
+  max-height: calc(100vh - 9rem);
+  overflow: auto;
 }
-.SideBarContainer .BigNavcontainer {
+.container .SideBarContainer .BigNavcontainer {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0.2rem 0.5rem;
 }
-.SideBarContainer .BigNavcontainer .Navcontainer {
+.container .SideBarContainer .BigNavcontainer .Navcontainer {
   display: flex;
   gap: 1rem;
   align-items: center;

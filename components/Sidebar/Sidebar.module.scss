@@ -1,20 +1,29 @@
-.SideBarContainer{
+.container{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    color: #213F7D;
-    font-weight: 400;
-    .BigNavcontainer{
+    padding: 1rem 0;
+    .SideBarContainer{
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
-        padding: .2rem .5rem;
-        .Navcontainer{
+        color: #213F7D;
+        font-weight: 400;
+        max-height: calc(100vh - 9rem);
+        overflow: auto;
+        .BigNavcontainer{
             display: flex;
-            gap: 1rem;
-            align-items: center;
-            width: 70%;
+            flex-direction: column;
+            width: 100%;
+            padding: .2rem .5rem;
+            .Navcontainer{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                width: 70%;
+            }
         }
     }
 }

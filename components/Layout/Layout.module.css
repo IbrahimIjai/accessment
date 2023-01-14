@@ -1,7 +1,3 @@
-.layoutContainer {
-  display: flex;
-  flex-direction: column;
-}
 .layoutContainer .Navbar {
   position: fixed;
   top: 0;
@@ -9,21 +5,23 @@
   right: 0;
 }
 .layoutContainer .Main {
-  margin-top: 15vh;
+  margin-top: 18vh;
   width: 100%;
   display: flex;
   justify-content: flex-start;
 }
 .layoutContainer .Main .SideBar {
-  width: 25%;
+  width: 20%;
   position: fixed;
   padding: 4px;
-  height: 85vh;
-  overflow-x: hidden;
-  overflow-y: auto;
   text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .layoutContainer .Main .Children {
-  width: 75%;
-  margin-left: 25%;
+  background-color: #E5E5E5;
+  height: 100%;
+  width: 80%;
+  margin-left: 20%;
 }/*# sourceMappingURL=Layout.module.css.map */

@@ -135,67 +135,70 @@ export default function SideBar() {
         },
     ]
   return (
-    <div className={styles.SideBarContainer}>
-        <div className={styles.BigNavcontainer}>
-            <div className={styles.Navcontainer}>
-                <MdWorkOutline/>
-                <p>Switch Organization</p>
+    <div className={styles.container}>
+        <div className={styles.SideBarContainer}>
+            <div className={styles.BigNavcontainer}>
+                <div className={styles.Navcontainer}>
+                    <MdWorkOutline/>
+                    <p>Switch Organization</p>
+                </div>
+                <div className={styles.Navcontainer}>
+                    <AiOutlineHome/>
+                    <p>Dashboard</p>
+                </div>
             </div>
-            <div className={styles.Navcontainer}>
-                <AiOutlineHome/>
-                <p>Dashboard</p>
-            </div>
-        </div>
-        <div className={styles.BigNavcontainer}>
-            <div>
-                <p>CUSTOMERS</p>
-            </div>
-            {
-                customersNav.map((navs)=>{
-                    return(
-                        <div key={navs.id} className={styles.Navcontainer}>
-                            <div>{navs.navIcon}</div>
-                            <div>
-                               <Link href={navs.route}>
-                                    <div>{navs.navTitle}</div>
-                                </Link> 
+            <div className={styles.BigNavcontainer}>
+                <div>
+                    <p>CUSTOMERS</p>
+                </div>
+                {
+                    customersNav.map((navs)=>{
+                        return(
+                            <div key={navs.id} className={styles.Navcontainer}>
+                                <div>{navs.navIcon}</div>
+                                <div>
+                                <Link href={navs.route}>
+                                        <div>{navs.navTitle}</div>
+                                    </Link> 
+                                </div>
+                                
                             </div>
-                            
-                        </div>
-                    )
-                })
-            }
-        </div>
-        <div className={styles.BigNavcontainer}>
-            <p>BUSSINESSES</p>
-            {
-                businessNav.map((navs)=>{
-                    return(
-                        <div key={navs.id} className={styles.Navcontainer}>
-                            <div>{navs.navIcon}</div>
-                            <Link href={navs.route}>
-                                <div>{navs.navTitle}</div>
-                            </Link>
-                        </div>
-                    )
-                })
-            }
-        </div>
-        <div className={styles.BigNavcontainer}>
-            <p>SETTINGS</p>
-            {
-                settingsNav.map((navs)=>{
-                    return(
-                        <div key={navs.id} className={styles.Navcontainer}>
-                            <div>{navs.navIcon}</div>
-                            <Link href={navs.route}>
-                                <div>{navs.navTitle}</div>
-                            </Link>
-                        </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+            </div>
+            <div className={styles.BigNavcontainer}>
+                <p>BUSSINESSES</p>
+                {
+                    businessNav.map((navs)=>{
+                        return(
+                            <div key={navs.id} className={styles.Navcontainer}>
+                                <div>{navs.navIcon}</div>
+                                <Link href={navs.route}>
+                                    <div>{navs.navTitle}</div>
+                                </Link>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <div className={styles.BigNavcontainer}>
+                <p>SETTINGS</p>
+                {
+                    settingsNav.map((navs)=>{
+                        return(
+                            <div key={navs.id} className={styles.Navcontainer}>
+                                <div>{navs.navIcon}</div>
+                                <Link href={navs.route}>
+                                    <div>{navs.navTitle}</div>
+                                </Link>
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
     </div>
+    
   )
 }

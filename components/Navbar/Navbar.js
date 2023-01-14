@@ -27,7 +27,7 @@ export default function Navbar() {
             
             <div className={styles.userProfile}>
                 <div className={styles.userProfileImage}>
-                    <Image src="/ImageNav.jpg" width={40} height={60} alt="logo" layout="fill" objectFit="cover"/>
+                    <Image src="/ImageNav.jpg" alt="logo" layout="fill" objectFit="cover"/>
                 </div>
                 <div className={styles.userProfileLink}>
                     <span>Adedeji</span>
