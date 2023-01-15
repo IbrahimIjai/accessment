@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #213F7D;
+    padding: 1.5rem 0;
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.8rem;
+        p{
+            font-weight: 600;
+        }
+        select{
+            background-color: rgba(17, 42, 91, 0.1);
+            padding: 10px;
+            border: none;
+            font-weight: 700;
+        }
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        .active{
+            font-weight: 800;
+            scale: 1.5;
+        }
+        .directionRight{
+            background-color: rgba(17, 42, 91, 0.1);
+            padding: .51rem;
+        }
+    }
+}

@@ -11,6 +11,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  font-size: 0.7rem;
+  padding-right: 1rem;
 }
 .container .headerContainer .header {
   display: flex;
@@ -19,7 +21,7 @@
   justify-content: flex-start;
   gap: 0.3rem;
   width: 16.66667%;
-  font-weight: 600;
+  font-weight: 800;
 }
 .container .userContainer {
   width: 100%;
@@ -28,6 +30,8 @@
   justify-content: space-between;
   gap: 1.5rem;
   border-bottom: 0.21px solid #dadfe9;
+  font-size: 0.7rem;
+  padding-right: 1rem;
 }
 .container .userContainer .user {
   display: flex;
@@ -38,5 +42,5 @@
   width: 16.66667%;
   flex-wrap: wrap;
   overflow: hidden;
-  font-weight: 450;
+  font-weight: 600;
 }/*# sourceMappingURL=UsersTable.module.css.map */

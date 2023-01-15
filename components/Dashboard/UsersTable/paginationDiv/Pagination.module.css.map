@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"Pagination.module.css"}
+{"version":3,"sources":["Pagination.module.scss","Pagination.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,cAAA;EACA,iBAAA;ACCJ;ADAI;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,WAAA;ACER;ADDQ;EACI,gBAAA;ACGZ;ADDQ;EACI,uCAAA;EACA,aAAA;EACA,YAAA;EACA,gBAAA;ACGZ;ADAI;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,WAAA;ACER;ADDQ;EACI,gBAAA;EACA,UAAA;ACGZ;ADDQ;EACI,uCAAA;EACA,gBAAA;ACGZ","file":"Pagination.module.css"}

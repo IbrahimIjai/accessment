@@ -1,1 +1,36 @@
-/*# sourceMappingURL=Pagination.module.css.map */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #213F7D;
+  padding: 1.5rem 0;
+}
+.container .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.container .left p {
+  font-weight: 600;
+}
+.container .left select {
+  background-color: rgba(17, 42, 91, 0.1);
+  padding: 10px;
+  border: none;
+  font-weight: 700;
+}
+.container .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.container .right .active {
+  font-weight: 800;
+  scale: 1.5;
+}
+.container .right .directionRight {
+  background-color: rgba(17, 42, 91, 0.1);
+  padding: 0.51rem;
+}/*# sourceMappingURL=Pagination.module.css.map */

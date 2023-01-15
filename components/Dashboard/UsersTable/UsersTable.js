@@ -59,7 +59,7 @@ export default function UsersTable({currentUsers}) {
                                 <p className={styles.user}><DateDiv date={user.createdAt} /></p>
                                 <div className={styles.user}>
                                     <StatusDiv education={user.education} accountBalance={user.accountBalance}/> 
-                                    <AiOutlineMore/>
+                                    <AiOutlineMore size="2em"/>
                                 </div>
                             </div>
                         )

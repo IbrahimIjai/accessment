@@ -1,9 +1,50 @@
 .container{
-    padding: 2rem 2rem;
+    padding: 2rem 1.5rem;
     .userContainer{
         display: flex;
         flex-direction: column;
         width: 100%;
+        .userContainerTitle{
+            color: #213F7D;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .userCardImage1{
+            background-color: #dbbee0;
+            border-radius: 30%;
+            width: 30px;
+            height: 30px;
+            align-items:center ;
+            display: flex;
+            justify-content: center;
+        }
+        .userCardImage2{
+            background-color: #a999d3;
+            border-radius: 30%;
+            width: 30px;
+            height: 30px;
+            align-items:center ;
+            display: flex;
+            justify-content: center;
+        }
+        .userCardImage3{
+            background-color: #f1b5ab;
+            border-radius: 30%;
+            width: 30px;
+            height: 30px;
+            align-items:center ;
+            display: flex;
+            justify-content: center;
+        }
+        .userCardImage4{
+            background-color: #e4b2be;
+            border-radius: 30%;
+            width: 30px;
+            height: 30px;
+            align-items:center ;
+            display: flex;
+            justify-content: center;
+        }
         .cardContainer{
             display: flex;
             align-items: center;

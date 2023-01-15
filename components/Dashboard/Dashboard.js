@@ -15,25 +15,25 @@ export default function DashboardComponet() {
     const userCardStats = [
         {
             id:1,
-            icon: "",
+            icon: <div className={styles.userCardImage1}><Image src="/usersCard1.png" width={22} height={22} alt="an image"/></div>,
             tag: "USERS",
             number: "2,435"
         },
         {
             id:2,
-            icon: "",
+            icon: <div className={styles.userCardImage2}><Image src="/usersCard2.png" width={22} height={22} alt="an image"/></div>,
             tag: "ACTIVE USERS",
             number: "2,435"
         },
         {
             id:3,
-            icon: "",
+            icon: <div className={styles.userCardImage3}><Image src="/usersCard3.png" width={22} height={22} alt="an image"/></div>,
             tag: "USERS WITH LOAN",
             number: "12,435"
         },
         {
             id:4,
-            icon: "USERS WITH SAVINGS",
+            icon: <div className={styles.userCardImage4}><Image src="/usersCard4.png" width={22} height={22} alt="an image"/></div>,
             tag: "Users",
             number: "102,453"
         }
@@ -72,7 +72,7 @@ export default function DashboardComponet() {
     useEffect(() => {
         async function fetchData() {
           const data = await getUsers();
-          setUsers(data);
+          data && setUsers(data);
         }
         fetchData();
       }, []);
@@ -84,13 +84,13 @@ export default function DashboardComponet() {
       <Layout>
         <div className={styles.container}>
             <div className={styles.userContainer}>
-                <p>Users</p>
+                <p className={styles.userContainerTitle}>Users</p>
                 <div className={styles.cardContainer}>
                     {
                         userCardStats.map((userStats)=>{
                             return(
                                 <div key={userStats.id} className={styles.card}>
-                                    <div>Icon</div>
+                                    <div>{userStats.icon}</div>
                                     <p>{userStats.tag}</p>
                                     <p className={styles.cardNumber}>{userStats.number}</p>
                                 </div>
@@ -102,7 +102,7 @@ export default function DashboardComponet() {
 
             <UsersTable  currentUsers={currentUsers} />
             <UsersTablePagination 
-                totalPosts={users.length}
+                totalUsers={users.length}
                 usersPerPage={usersPerPage}
                 currentPage={currentPage}
                 setCurrentPage={setCurrentPage}
