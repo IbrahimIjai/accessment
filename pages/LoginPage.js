@@ -3,13 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from "../styles/Home.module.css";
 import Layout from '../components/Layout/Layout';
-export default function Login() {
+import Login from '../components/LoginPage/Login';
+export default function LoginPage() {
   
   return (
     <>
-      <Layout>
-        <div>Login</div>
-      </Layout>
+        <div>
+          <Login/>
+        </div>
     </>
   )
 }

@@ -2,8 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   padding: 1rem 0;
+}
+.container ::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+.container ::-webkit-scrollbar-thumb {
+  background-color: #f7f0f0;
+  border-radius: 10px;
+}
+.container ::-webkit-scrollbar-thumb:hover {
+  background-color: #ece3e3;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
 }
 .container .SideBarContainer {
   display: flex;

@@ -1,5 +1,66 @@
-.Container{
+.container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+    .logo{
+        position: absolute;
+        top: 3vh;
+        left: 3vw;
+    }
+    .section1{
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .heading{
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #213F7D;
+        }
+        .heading2{
+            font-size: 1.2rem;
+            font-weight: 600;
+            span{
+                color: #39CDCC;
+            }
+        }
+        .linkHeading{
+            // font-weight:;
+            text-decoration: underline;
+        }
+        .NavItems{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            color: #213F7D;
+            .Nav{
+                border: 1px solid #b7e6e6;
+                border-radius: 5px;
+                padding: 1rem;
+                cursor: pointer;
+                transition: all .5s ease-in-out;
+                &:hover{
+                    background-color: #b7e6e6;
+                }
+                    
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

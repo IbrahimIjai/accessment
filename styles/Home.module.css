@@ -1,5 +1,48 @@
-.Container {
+.container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.container .logo {
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+}
+.container .section1 {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .section1 .heading {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #213F7D;
+}
+.container .section1 .heading2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.container .section1 .heading2 span {
+  color: #39CDCC;
+}
+.container .section1 .linkHeading {
+  text-decoration: underline;
+}
+.container .section1 .NavItems {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: #213F7D;
+}
+.container .section1 .NavItems .Nav {
+  border: 1px solid #b7e6e6;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.container .section1 .NavItems .Nav:hover {
+  background-color: #b7e6e6;
 }/*# sourceMappingURL=Home.module.css.map */
