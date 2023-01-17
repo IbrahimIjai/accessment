@@ -14,7 +14,7 @@ export default function UsersPage ({data}){
     )
 }
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
     const data = await getUsers();
     return{
         props: {

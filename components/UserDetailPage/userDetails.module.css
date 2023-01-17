@@ -1,1 +1,106 @@
-/*# sourceMappingURL=userDetails.module.css.map */
+.Container {
+  margin: 1rem 2.5rem;
+}
+.Container .Nav {
+  display: flex;
+  color: #545F7D;
+  align-items: center;
+  gap: 2rem;
+}
+.Container .HeadSec2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Container .HeadSec2 p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.Container .HeadSec2 .actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.Container .HeadSec2 .actionButtons div {
+  border: 1px solid red;
+  padding: 0.41rem;
+  border-radius: 10px;
+}
+.Container .HeadSec2 .actionButtons .activatebtn {
+  border: 1px solid green;
+  color: green;
+}
+.Container .HeaderCardContainer {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 2px rgb(212, 210, 210);
+  color: #213F7D;
+}
+.Container .HeaderCardContainer .CardContainer {
+  display: flex;
+  padding: 1rem 1.5rem;
+}
+.Container .HeaderCardContainer .CardContainer .sec1 {
+  display: flex;
+  border-right: 1px solid #545F7D;
+  padding: 0.8rem 1.8rem;
+  align-items: center;
+  gap: 2rem;
+}
+.Container .HeaderCardContainer .CardContainer .sec1 .Names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Container .HeaderCardContainer .CardContainer .sec1 .Names .RName {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.Container .HeaderCardContainer .CardContainer .sec1 .Names div {
+  border: none;
+  padding: none;
+}
+.Container .HeaderCardContainer .CardContainer .sec1 .profileImage {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.Container .HeaderCardContainer .CardContainer .sec2 {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #545F7D;
+  padding: 0.8rem 2.5rem;
+  align-items: center;
+}
+.Container .HeaderCardContainer .CardContainer .sec2 p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.Container .HeaderCardContainer .CardContainer .sec3 {
+  padding: 1rem 0 1rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Container .HeaderCardContainer .CardContainer .sec3 p {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.Container .Tabs {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+.Container .Tabs div {
+  padding: 1.5rem 0.9rem;
+}
+.Container .Tabcontent {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 2px rgb(212, 210, 210);
+  margin: 3rem 0;
+}/*# sourceMappingURL=userDetails.module.css.map */

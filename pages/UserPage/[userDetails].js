@@ -10,37 +10,11 @@ export default function User ({User}){
     return(
         <div>
           <Layout>
-            <UserDetails/>
+            <UserDetails User={User}/>
           </Layout>
         </div>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 export async function getServerSideProps(context) {

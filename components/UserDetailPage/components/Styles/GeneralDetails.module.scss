@@ -1,0 +1,25 @@
+.container{
+    padding: 2rem;
+    .personalInfo{
+        color: #213F7D;
+        border-bottom: 1px solid #213F7D;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+        // p{
+        //     font-size: 1.3rem;
+        //     font-weight: 600;
+        // }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            .contentDiv{
+                padding-right: 4rem;
+                span{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+                
+            }
+        }
+    }
+}
