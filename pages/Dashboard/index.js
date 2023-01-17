@@ -2,12 +2,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
 import DashboardComponet from '../../components/Dashboard/Dashboard';
-export default function Dahboard() {
-
+import { getUsers } from '../api/Users';
+export default function Dahboard({data}) {
+// console.log(data)
   return (
-    <>
-        <DashboardComponet/>
-    </>
+    <div>
+        <DashboardComponet data={data}/>
+    </div>
   )
 }
 
+export async function getStaticProps(){
+  const data = await getUsers();
+  return{
+      props: {
+          data
+      }
+  }
+}

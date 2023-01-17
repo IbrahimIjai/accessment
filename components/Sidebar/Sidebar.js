@@ -12,7 +12,7 @@ export default function SideBar() {
             id: 1,
             navTitle: "User",
             navIcon: <AiOutlineUser/>,
-            route: "/"
+            route: "/UserPage/"
         },
         {
             id: 2,
@@ -138,14 +138,20 @@ export default function SideBar() {
     <div className={styles.container}>
         <div className={styles.SideBarContainer}>
             <div className={styles.BigNavcontainer}>
-                <div className={styles.Navcontainer}>
-                    <MdWorkOutline/>
-                    <p>Switch Organization</p>
-                </div>
-                <div className={styles.Navcontainer}>
-                    <AiOutlineHome/>
-                    <p>Dashboard</p>
-                </div>
+                <Link href="/">
+                    <div className={styles.Navcontainer}>
+                        <MdWorkOutline/>
+                        <p>Switch Organization</p>
+                    </div>
+                </Link>
+                
+                <Link href="/Dashboard">
+                    <div className={styles.Navcontainer}>
+                        <AiOutlineHome/>
+                        <p>Dashboard</p>
+                    </div>
+                </Link>
+                
             </div>
             <div className={styles.BigNavcontainer}>
                 <div>

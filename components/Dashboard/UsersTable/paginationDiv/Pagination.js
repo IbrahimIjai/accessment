@@ -13,8 +13,8 @@ totalUsers,
   for (let i = 1; i <= Math.ceil(totalUsers / usersPerPage); i++) {
     pages.push(i);
   }
-  console.log(pages)
-  console.log(currentPage)
+  // console.log(pages)
+  // console.log(currentPage)
   return (
     <div className={styles.container}>
         <div className={styles.left}>

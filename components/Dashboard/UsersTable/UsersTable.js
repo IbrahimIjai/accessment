@@ -3,6 +3,7 @@ import styles from "./UsersTable.module.css";
 import { AiOutlineMore, AiOutlineWifi } from "react-icons/ai";
 import DateDiv from "./dateAndStatus/Date";
 import StatusDiv from "./dateAndStatus/Status";
+import Link from "next/link";
 
 export default function UsersTable({currentUsers}) {
     const tableHeads = [
@@ -52,15 +53,17 @@ export default function UsersTable({currentUsers}) {
                     currentUsers.map((user)=>{
                         return(
                             <div key={user.id} className={styles.userContainer}>
-                                <p className={styles.user}>{user.orgName}</p>
-                                <p className={styles.user}>{user.userName}</p>
-                                <p className={styles.user}>{user.email}</p>
-                                <p className={styles.user}>{user.phoneNumber}</p>
-                                <p className={styles.user}><DateDiv date={user.createdAt} /></p>
-                                <div className={styles.user}>
-                                    <StatusDiv education={user.education} accountBalance={user.accountBalance}/> 
-                                    <AiOutlineMore size="2em"/>
-                                </div>
+                                <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.orgName}</p></Link>
+                                <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.userName}</p></Link>
+                                <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.email}</p></Link>
+                                <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.phoneNumber}</p></Link>
+                                <Link href={"/UserPage/" + user.id}><p className={styles.user}><DateDiv date={user.createdAt} /></p></Link>
+                                <Link href={"/UserPage/" + user.id}>
+                                    <div className={styles.user}>
+                                        <StatusDiv education={user.education} accountBalance={user.accountBalance}/> 
+                                        <AiOutlineMore size="2em"/>
+                                    </div>
+                                </Link>
                             </div>
                         )
                     })
