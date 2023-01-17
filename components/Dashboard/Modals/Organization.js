@@ -1,6 +1,8 @@
-export default function More(){
+import styles from "./styles/modalsStyle.module.css";
+
+export default function Organization(){
     return(
-        <div>
+        <div className={styles.OrganizationContainer}>
             <div>
                 <p>Organization</p>
                 <select>

@@ -4,7 +4,9 @@ import { AiOutlineMore, AiOutlineWifi } from "react-icons/ai";
 import DateDiv from "./dateAndStatus/Date";
 import StatusDiv from "./dateAndStatus/Status";
 import Link from "next/link";
-
+import More from "../Modals/More";
+import Organization from "../Modals/Organization";
+import { useState } from "react";
 export default function UsersTable({currentUsers}) {
     const tableHeads = [
         {
@@ -33,6 +35,11 @@ export default function UsersTable({currentUsers}) {
         },
     ]
 
+    const [organization, setOrganizationModal] = useState(false);
+    const handler =()=>{
+        setOrganizationModal(!organization)
+    }
+
     return(
         <div className={styles.container}>
             <div className={styles.headerContainer}>
@@ -41,10 +48,13 @@ export default function UsersTable({currentUsers}) {
                         return(
                             <div key={tableHead.id}  className={styles.header}>
                                 <p>{tableHead.title}</p>
-                                <AiOutlineWifi size="1.7em"/>
+                                <AiOutlineWifi onClick={tableHead.id == 1 && handler} size="1.7em"/>
                             </div>
                         )
                     })
+                }
+                {
+                    organization && <Organization/>
                 }
             </div>
           <div>
@@ -60,8 +70,8 @@ export default function UsersTable({currentUsers}) {
                                 <Link href={"/UserPage/" + user.id}><p className={styles.user}><DateDiv date={user.createdAt} /></p></Link>
                                 <Link href={"/UserPage/" + user.id}>
                                     <div className={styles.user}>
-                                        <StatusDiv education={user.education} accountBalance={user.accountBalance}/> 
-                                        <AiOutlineMore size="2em"/>
+                                        <StatusDiv  education={user.education} accountBalance={user.accountBalance}/> 
+                                        <AiOutlineMore  size="2em"/>
                                     </div>
                                 </Link>
                             </div>

@@ -9,12 +9,12 @@ export default function Home() {
     {
       id:1,
       name: " DASHBOARD PAGE",
-      route: "/DashBoard"
+      route: "/Dashboard"
     },
     {
       id:2,
       name: " LoginPage PAGE",
-      route: "/LoginPage.js"
+      route: "/LoginPage"
     },
     {
       id:3,
@@ -65,6 +65,7 @@ export default function Home() {
           <p className={styles.heading2}>Submitted by <span>Ibrahim Ijai</span></p>
           <p className={styles.linkHeading}>LINKS TO SAMPLE PAGES BUILT</p>
           <div className={styles.NavItems}>
+
             {
               Pages.map((page)=>{
                 return (
@@ -75,7 +76,7 @@ export default function Home() {
                         transform: `scale(${scale})`,
                         transition: "transform 0.3s ease-in-out",
                       }}
-                      onClick={handleClick}
+                      // onClick={handleClick}
                   
                   >
                     <Link href={page.route}>

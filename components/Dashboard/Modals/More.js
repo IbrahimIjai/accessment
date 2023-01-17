@@ -1,5 +1,6 @@
 import { HiOutlineEye } from "react-icons/hi";
 import { BiUserX, BiUserCheck } from "react-icons/bi";
+import styles from "./styles/modalsStyle.module.css";
 export default function More(){
     
     return(
