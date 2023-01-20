@@ -3,37 +3,38 @@ import styles from "./styles/modalsStyle.module.css";
 export default function Organization(){
     return(
         <div className={styles.OrganizationContainer}>
-            <div>
+            <div className={styles.select}>
                 <p>Organization</p>
                 <select>
                     <options value="lendsqr">lendsqr</options>
                 </select>
             </div>
-            <div>
+            <div className={styles.select}>
                 <p>Username</p>
-                <p>User</p>
+                <input placeholder="User" type="text"/>
             </div>
-            <div>
+            <div className={styles.select}>
                 <p>Email</p>
-                <input/>
+                <input placeholder="Email" type="email"/>
             </div>
-            <div>
+            <div className={styles.select}> 
                 <p>Date</p>
-                <input/>
+                <input placeholder="Date" type="date"/>
             </div>
-            <div>
+            <div className={styles.select}>
                 <p>Phone number</p>
-                <input/>
+                <input placeholder="Phone number" type="number"/>
             </div>
-            <div>
+            <div className={styles.select}>
                 <p>Status</p>
                 <select>
-                    <option></option>
+                    <option value="Active">Active</option>
+                    <option value="InActive">InActive</option>
                 </select>
             </div>
-            <div>
-                <div>Reset</div>
-                <div>Filter</div>
+            <div className={styles.btn}>
+                <div className={styles.reset}>Reset</div>
+                <div className={styles.filter}>Filter</div>
             </div>
             
             

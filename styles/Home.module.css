@@ -45,4 +45,53 @@
 }
 .container .section1 .NavItems .Nav:hover {
   background-color: #b7e6e6;
+}
+
+.portfolioContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioContainer .projects {
+  border-top: 1px solid #213F7D;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioContainer .projects .projectCard {
+  border: 1px solid #213F7D;
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 50%;
+}
+.portfolioContainer .projects .projectCard:hover {
+  box-shadow: 0px 0px 10px 2px rgb(111, 184, 208);
+  scale: 1.06;
+  transition: all 0.2s;
+}
+.portfolioContainer .projects .projectCard .projectLink {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #39CDCC;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.portfolioContainer .projects .projectCard .projectDesc {
+  max-width: 90%;
+  text-align: center;
+  font-weight: 400;
+  color: #213F7D;
+}
+.portfolioContainer .projects .cv {
+  border: 1px solid #080c13;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+.portfolioContainer .projects .cv:hover {
+  box-shadow: 0px 0px 10px 2px rgb(111, 184, 208);
+  scale: 1.03;
 }/*# sourceMappingURL=Home.module.css.map */

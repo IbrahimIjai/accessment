@@ -4,7 +4,7 @@ import styles from "./styles/modalsStyle.module.css";
 export default function More(){
     
     return(
-        <div>
+        <div className={styles.moreContainer}>
             <div>
                 <HiOutlineEye/>
                 <p>View Details</p>

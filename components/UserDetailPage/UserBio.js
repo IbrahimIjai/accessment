@@ -44,10 +44,13 @@ export default function UserDetails ({User}){
     return(
         <div className={styles.Container}>
             <div>
-                <div className={styles.Nav}>
-                    <Link href="/"><BiArrowBack size="2em"/></Link>
-                    <Link href="/"><p>Back to users Page</p></Link>
-                </div>
+                <Link href="/Dashboard">
+                    <div className={styles.Nav}>
+                        <Link href="/"><BiArrowBack size="2em"/></Link>
+                        <Link href="/"><p>Back to users Page</p></Link>
+                    </div>
+                </Link>
+                
             <div className={styles.HeadSec2}>
                 <p>Users details</p>
                 <div className={styles.actionButtons}>

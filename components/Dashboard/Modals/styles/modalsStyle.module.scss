@@ -1,3 +1,60 @@
 .OrganizationContainer{
     position: absolute;
+    background-color: white;
+    margin-top: 72vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #545F7D;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 0px 10px 2px rgb(212, 210, 210);
+    .select{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        p{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        select{
+            border: 1px solid #213F7D;
+            border-radius: 8px;
+            opacity: 0.3;
+            padding: .2rem;
+        }
+        input{
+            border: 1px solid #213F7D;
+            border-radius: 8px;
+            opacity: 0.3;
+            padding: .3rem;
+        }
+    }
+    .btn{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.2rem;
+        div{
+            border: 1px solid #213F7D;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            padding: .3rem;
+        }
+    }
+}
+
+.moreContainer{
+    display:  flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 2px rgb(212, 210, 210);
+    position: absolute;
+    padding: 1rem; 
+    background-color: #fff;
+    margin: 2rem 0;
+    right: 0;
 }

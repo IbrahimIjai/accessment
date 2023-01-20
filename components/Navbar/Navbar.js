@@ -7,10 +7,13 @@ import { AiOutlineSearch } from "react-icons/ai";
 export default function Navbar() {
     return (
       <div  className={styles.Navbar}>
-       <div className={styles.Logo}>
-            <Image src="/lendsqr.png" width={100} height={30} alt="logo"/>
-            <Image src="/Union.png" width={30} height={30} alt="logo"/>
-       </div>
+        <Link href="/">
+            <div className={styles.Logo}>
+                    <Image src="/lendsqr.png" width={100} height={30} alt="logo"/>
+                    <Image src="/Union.png" width={30} height={30} alt="logo"/>
+            </div>
+        </Link>
+            
        
        <div class={styles.Search}>
             <input class="form-field" type="Text" placeholder="Search for anything"/>

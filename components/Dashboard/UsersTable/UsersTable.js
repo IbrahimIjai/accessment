@@ -40,6 +40,8 @@ export default function UsersTable({currentUsers}) {
         setOrganizationModal(!organization)
     }
 
+    const [ openMore, setMoreOpen] = useState(false)
+
     return(
         <div className={styles.container}>
             <div className={styles.headerContainer}>
@@ -62,19 +64,29 @@ export default function UsersTable({currentUsers}) {
                 {
                     currentUsers.map((user)=>{
                         return(
-                            <div key={user.id} className={styles.userContainer}>
-                                <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.orgName}</p></Link>
-                                <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.userName}</p></Link>
-                                <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.email}</p></Link>
-                                <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.phoneNumber}</p></Link>
-                                <Link href={"/UserPage/" + user.id}><p className={styles.user}><DateDiv date={user.createdAt} /></p></Link>
-                                <Link href={"/UserPage/" + user.id}>
-                                    <div className={styles.user}>
-                                        <StatusDiv  education={user.education} accountBalance={user.accountBalance}/> 
-                                        <AiOutlineMore  size="2em"/>
-                                    </div>
-                                </Link>
+                        
+                            <div key={user.id}>
+                                <div  className={styles.userContainer}>
+                                    <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.orgName}</p></Link>
+                                    <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.userName}</p></Link>
+                                    <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.email}</p></Link>
+                                    <Link href={"/UserPage/" + user.id}><p className={styles.user}>{user.phoneNumber}</p></Link>
+                                    <Link href={"/UserPage/" + user.id}><p className={styles.user}><DateDiv date={user.createdAt} /></p></Link>
+                                    <Link href={"/UserPage/" + user.id}>
+                                        <div className={styles.user}>
+                                            <StatusDiv  education={user.education} accountBalance={user.accountBalance}/> 
+                                            <AiOutlineMore onClick={()=>setMoreOpen(!openMore)}  size="2em"/>
+                                        </div>
+                                    </Link>
+                                    {
+                                        openMore && <More/>
+                                    }
+                                </div>
+                                
                             </div>
+                            
+
+                            
                         )
                     })
                 }
