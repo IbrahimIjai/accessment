@@ -91,7 +91,9 @@ export default function Home() {
 
         <div className={styles.section2}>
           <div className={styles.Introduction}>
-            <p>Click here to see my Resume and portfolio</p>
+            <Link href="/portfolio">
+              <a>Click here to see more about me, my Resume and portfolio</a>
+            </Link>
           </div>
         </div>
             

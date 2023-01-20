@@ -46,6 +46,11 @@
 .container .section1 .NavItems .Nav:hover {
   background-color: #b7e6e6;
 }
+.container .Introduction {
+  margin: 3rem 0;
+  border-bottom: 1px solid #39CDCC;
+  color: #213F7D;
+}
 
 .portfolioContainer {
   display: flex;
